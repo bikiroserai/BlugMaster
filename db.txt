@@ -1,0 +1,83 @@
+Roles
+Id-(int)
+Role-(varchar)
+Is_active(Boolean) -default(true)
+
+Users Table
+
+id – (int)
+name (varchar)
+address (varchar)
+contact_no (int)
+email (varchar)
+role _id(string)
+password (varchar)
+gender (string)
+interests (varchar)
+thumbnail (varchar)
+education (varchar)-yo ta navaya pani hunchha hou education sanga hamilai k matlab hamilai ta article chahine ho so education navakole pani lekhna sakxa :D
+joined_date (date)
+is_active (Boolean) -default(true)
+
+Category Table
+id (int)
+name (string)
+slug (string)
+is_active (Boolean) -default(true)
+
+Tags Table
+id (int)
+category_id (int) – foreign_Key
+tags (string)
+is_active(Boolean) -default(true)
+
+
+Comment Table
+id – (int)
+post_id – (int) foreign key
+user_id – (int) foreign key
+comment(text)
+date(date)
+is_active(Boolean) -default(true)
+
+Like Table
+id (int)
+users_id (int) – foreign key
+post_id – foreign key
+
+
+Dislike Table
+id (int)
+users_id (int) – foreign key
+post_id – foreign key
+
+
+Post Table
+id – (int)
+category_id (int) – foreign key
+title(text)
+main_keywords – (text)
+lsi_keywords- (text)
+body(text)
+tags (string)
+featured_image-(varchar)
+images_id(int)- foreign key
+word_count(int)
+links(varchar)
+slug(string)
+is_approved(Boolean)-default(false)
+is_resubmitted(Boolean)-default(false)
+is_active(Boolean)-default(true)
+
+
+Images table
+id(int)
+post_id(int) – foreign key
+name(varchar)
+is_active(Boolean) -default(true)
+
+Balance
+Id(int)
+user_id(int) – foreign key
+amount(int)
+is_active(Boolean) -default(true)

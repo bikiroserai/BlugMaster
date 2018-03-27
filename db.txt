@@ -16,6 +16,9 @@ gender (string)
 interests (varchar)
 thumbnail (varchar)
 education (varchar)-yo ta navaya pani hunchha hou education sanga hamilai k matlab hamilai ta article chahine ho so education navakole pani lekhna sakxa :D
+
+
+---- Hoina details ko lagi ho rakhdai ma k jancha ra ----
 joined_date (date)
 is_active (Boolean) -default(true)
 
